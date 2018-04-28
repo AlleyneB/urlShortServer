@@ -4,6 +4,22 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>urlShortServlet</servlet-name>
+		<servlet-class>com.alleyne.servlet.UrlShortServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>urlShortServlet</servlet-name>
+		<url-pattern>/shortMyUrl</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>getUrlServlet</servlet-name>
+		<servlet-class>com.alleyne.servlet.GetUrlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getUrlServlet</servlet-name>
+		<url-pattern>/d/*</url-pattern>
+	</servlet-mapping>
   <display-name></display-name>	
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
